@@ -1,3 +1,5 @@
+
+
 function getComputerChoice() {
 
   let options = ["rock", "paper", "scissors"];
@@ -37,9 +39,26 @@ function game(){
 
 
 
-  for (let i = 0; i < 5; i++) {
+
 
     let playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
     let computerSelection = getComputerChoice();
 
 playRound(playerSelection, computerSelection);
+
+
+
+
+
+
+if(playerScore === computerScore ){
+  console.log("Its a tie");
+} else if(playerScore > computerScore ){
+  console.log("You win!");
+} else{
+  console.log("You lose!");
+}
+
+}
+
+game();
